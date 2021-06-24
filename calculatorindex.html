@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=calculator.js></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body style="background-color: gray;">
+    <div class="container-fluid" style="text-align: center; margin-top: 50px; font-weight: bold;">CALCULATOR</div>
+    <div class="row">
+        <div class="col"></div>
+        
+        <div class="col" style="align-items: center; margin-top: 10px;">
+            <input type="text" class="form-control" id="inpt" style="width: 155px;">
+        </div>
+        
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="margin-top: 5px;">
+            <button class="btn btn-outline-dark" style="width: 56px;"onclick="clearBox()">C</button>
+            <button class="btn btn-outline-dark" style="width: 55px;"onclick="removeElement()"><</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('+')">+</button>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="margin-top: 5px;">
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('1')">1</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('2')">2</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('3')">3</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('-')">-</button>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="margin-top: 5px;">
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('4')">4</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('5')">5</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('6')">6</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('*')">*</button>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="margin-top: 5px;">
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('7')">7</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('8')">8</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('9')">9</button>
+            <button class="btn btn-outline-dark" style="width: 35px;"onclick="displayvalue('/')">/</button>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" style="margin-top: 5px;">
+            
+            <button class="btn btn-outline-dark" style="width: 74px;"onclick="displayvalue('0')">0</button>
+            <button class="btn btn-outline-dark" style="width: 35px;" onclick="displayvalue('.')">.</button>
+            <button class="btn btn-outline-dark" style="width: 35px;" onclick="evaluateExpression()">=</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+</body>
+
+</html>
