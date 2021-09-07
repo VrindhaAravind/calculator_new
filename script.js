@@ -1,6 +1,6 @@
-function displayvalue(num){
+function displayvalue(no){
 let inputbox=document.getElementById("inpt")
-inputbox.value+=num;}
+inputbox.value+=no;}
 
 
 function evaluateExpression(){
